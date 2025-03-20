@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Melee</title>
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <h1>Word Melee</h1>
-    </header>
-    <main>
-        <section id="game">
-            <p>Welcome to Word Melee! Get ready to play.</p>
-            <!-- Game content will go here -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Word Melee. All rights reserved.</p>
-    </footer>
+    <!-- Home Screen -->
+    <div class="bg-blue-500 w-[500px] h-[500px]">
+        <div class="relative inline-block text-left">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md">
+                Choose your language
+            </button>
+            <div class="absolute hidden mt-2 w-48 bg-white rounded-md shadow-lg group-hover:block">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Option 1</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Option 2</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Option 3</a>
+            </div>
+        </div>
+        
+    </div>
     <script src="script.js"></script>
 </body>
-</html
+</html>
