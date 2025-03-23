@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import ChooseLanguage from './components/ChooseLanguage';
 import CreateRooms from './components/CreateRooms';
+import RoomList from './components/RoomList';
 
 function App() {
   const [language, setLanguage] = React.useState("en");
@@ -16,9 +17,12 @@ function App() {
        {/* Choose Language */}
        <ChooseLanguage language={language} setLanguage={setLanguage} />
 
-       
+
         {/* Create Rooms */}
         <CreateRooms setRooms={setRooms}/>
+
+        {/* Room List */}
+        <RoomList rooms={rooms} />
     </div>
   );
 }
