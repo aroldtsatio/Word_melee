@@ -7,7 +7,7 @@ export default function CreateRooms({ setRooms }) {
     // Fonction pour créer une salle avec un ID unique
     const createRoom = () => {
       const newRoomId = Math.random().toString(36).substr(2, 6).toUpperCase();
-      setRooms((prev) => [...prev, { id: newRoomId, name: `Salle ${prev.length + 1}` }]);
+      setRooms((prev) => [...prev, { id: newRoomId, name: `Room ${prev.length + 1}` }]);
     };
     return (
        <div className="mb-4">
